@@ -1,0 +1,13 @@
+{
+  "name": "Clevis Gikenyi — Full-Stack Software Engineer",
+  "short_name": "Clevis.dev",
+  "description": "Cardiff-based full-stack engineer. Python, Django, Next.js.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0c0a",
+  "theme_color": "#4f46e5",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
