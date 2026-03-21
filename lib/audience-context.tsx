@@ -37,7 +37,7 @@ const RECRUITER_KEYWORDS = [
   'linkedin', 'github',
   'salary', 'experience', 'skills',
   'hiring', 'recruiting', 'recruitment',
-  'interview', 'application', 'apply',
+  'interview', 'application', 'apply', 'clevis gikenyi', 'clevis', 'gikenyi',
 ]
 
 function detectAudienceFromContext(): Audience | null {
