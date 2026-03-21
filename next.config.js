@@ -42,17 +42,7 @@ const nextConfig = {
     ]
   },
 
-  // Redirect www to non-www
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.clevisgikenyi.dev' }],
-        destination: 'https://clevisgikenyi.dev/:path*',
-        permanent: true,
-      },
-    ]
-  },
+  
 }
 
 module.exports = nextConfig
