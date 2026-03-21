@@ -20,14 +20,13 @@ const AudienceContext = createContext<AudienceContextType>({
 
 // Keywords in the referrer URL or page search query that indicate a client
 const CLIENT_KEYWORDS = [
-  'hire', 'hiring', 'freelance', 'freelancer',
-  'build', 'builder', 'website', 'web site',
-  'develop', 'developer', 'development',
-  'app', 'application', 'software',
-  'project', 'make', 'create', 'design',
-  'agency', 'contractor', 'contract',
   'cost', 'price', 'quote', 'cheap',
-  'need', 'want', 'looking for',
+  'need', 'want', 'looking for', 'website developer','website developer in cardiff','web developer in wales','web developer in uk',
+  'hire developer', 'hire software engineer', 'hire web developer', 'hire full-stack developer', 'hire python developer', 'hire django developer', 'hire next.js developer', 'hire react developer', 'hire typescript developer',
+  'build website', 'build web app', 'build software', 'build application', 'build project',
+  'freelance developer', 'freelance web developer', 'freelance software developer', 'freelance application developer',
+  'freelance project', 'freelance work', 'freelance contract', 'freelance job',
+  'website development', 'web development', 'software development', 'application development', 'project development', 'website design', 'web design', 'software design', 'application design', 'project design', 'website builder', 'web builder', 'software builder', 'application builder', 'project builder',
 ]
 
 // Keywords that indicate a recruiter
@@ -37,6 +36,8 @@ const RECRUITER_KEYWORDS = [
   'engineer', 'candidate', 'talent',
   'linkedin', 'github',
   'salary', 'experience', 'skills',
+  'hiring', 'recruiting', 'recruitment',
+  'interview', 'application', 'apply',
 ]
 
 function detectAudienceFromContext(): Audience | null {
