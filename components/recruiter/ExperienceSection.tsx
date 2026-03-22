@@ -36,7 +36,7 @@ export function ExperienceSection() {
 
           {/* Download CV CTA */}
           <a
-            href="/cv.pdf"
+            href="/Clevis_Gikenyi_CV.pdf"
             download
             className="mt-2 w-full flex items-center justify-center gap-2 py-3 rounded-xl border border-[var(--border)] text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--border-strong)] hover:bg-[var(--bg-secondary)] transition-all"
           >

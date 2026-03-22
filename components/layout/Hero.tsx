@@ -114,7 +114,7 @@ export function Hero() {
                   View projects
                   <ArrowRight size={16} />
                 </a>
-                <a href="/cv.pdf" download
+                <a href="/Clevis_Gikenyi_CV.pdf" download
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-[var(--border)] text-[var(--text-primary)] font-medium hover:bg-[var(--bg-secondary)] transition-all"
                 >
                   <Download size={16} />
