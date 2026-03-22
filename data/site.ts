@@ -101,7 +101,7 @@ export const siteConfig = {
       category: "backend",
       description: "Award-winning privacy-preserving data-sharing platform for healthcare researchers, with GDPR-aligned RBAC, real-time comms, and a full CI/CD pipeline.",
       longDescription: "Capstone project recognised as Best Applied Software Engineering Project at Cardiff University 2025. Enables researchers to securely request and access datasets in compliance with data protection law.",
-      image: "/projects/pontiro.jpeg",
+      image: "/projects/alacrity.jpeg",
       liveUrl: "",
       githubUrl: "https://github.com/Clevis-254/pontiro",
       tags: ["Python", "Django", "DRF", "WebSockets", "Docker", "GitLab CI/CD"],
