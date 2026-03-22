@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import nodemailer from 'nodemailer'
+import { Resend } from 'resend'
 import { siteConfig } from '@/data/site'
 
 export async function POST(req: NextRequest) {
@@ -10,17 +10,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Missing fields' }, { status: 400 })
     }
 
-    // Create transporter inside the function so env vars are guaranteed loaded
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_APP_PASSWORD,
-      },
-    })
+    const resend = new Resend(process.env.RESEND_API_KEY)
 
-    await transporter.sendMail({
-      from: `"Portfolio Contact" <${process.env.GMAIL_USER}>`,
+    await resend.emails.send({
+      from: 'Portfolio Contact <noreply@clevisgikenyi.dev>',
       to: siteConfig.email,
       replyTo: email,
       subject: `New message from ${name} via portfolio`,
